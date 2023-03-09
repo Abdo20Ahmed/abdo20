@@ -3,9 +3,114 @@
     padding: 0;
     box-sizing: border-box;
 }
-.contenar {
-   
+/* start Land Section */
+.land-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/img1.jpeg");
+    background-size: cover;
 }
+/* container width in large screen */
+.land-section .container {
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* container width in extra small screen */
+@media screen and (max-width: 567px) {
+    .land-section .container {
+        max-width: 100% !important;
+    }
+}
+/* container width in small screen */
+@media screen and (min-width: 568px) and (max-width: 767px) {
+    .land-section .container {
+        max-width: 720px !important;
+    }
+}
+/* container width in medium screen */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .land-section .container {
+        max-width: 960px !important;
+    }
+}
+/* Start NavBar */
+.navbar {
+    width: 100%;
+}
+.navbar .navbar-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.navbar-content .logo {
+    width: 155px;
+}
+.navbar-content .logo img {
+    max-width: 100%;
+}
+.ul-list ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.ul-list ul li {
+    padding: 15px;
+}
+.ul-list ul li a {
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+/* End NavBar */
+/* Start Landing */
+.landing {
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+.landing-content .first {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.landing-content h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.landing-content .para {
+    color: white;
+    width: 775px;
+    margin: 0 auto 30px;
+}
+.landing-content .buttons button {
+    padding: 10px 30px;
+    border: 1px solid white;
+}
+.landing-content .buttons button:first-of-type {
+    background-color: #e19f52;
+    margin-right: 20px;
+}
+.landing-content .buttons button:last-of-type {
+    background-color: transparent;
+}
+.buttons button a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+/* End Landing */
+/* End Land Section */
 .saned {
     display: flex;
     justify-content: space-around;
